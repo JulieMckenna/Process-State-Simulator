@@ -1,0 +1,41 @@
+P1 Ready P2 Ready P3 Running P4 Ready P5 Ready P6 Blocked P7 Ready P8 Ready P9 Ready P10 Blocked P11 Blocked P12 Ready P13 Blocked P14 Ready P15 Ready P16 Blocked P17 Ready P18 Blocked P19 Ready end
+At time 5:  P3 requests the disk; P7 is dispatched. 
+At time 15: Time slice for P7 expires; P8 is dispatched. 
+At time 18: P8 requests the keyboard; P5 is dispatched. 
+At time 20: P5 requests the disk; P7 is dispatched. 
+At time 24: P7 requests the printer; P1 is dispatched. 
+At time 26: Time slice for P1 expires; P2 is dispatched.
+At time 28: P2 requests the disk; P4 is dispatched.
+At time 30: P4 requests the disk; P9 is dispatched.
+At time 32: P9 requests the disk; P14 is dispatched.
+At time 34: P14 requests the disk; P15 is dispatched.
+At time 36: P15 requests the disk; P19 is dispatched.
+At time 38: P19 requests the disk; P17 is dispatched.
+At time 40: Time slice for P17 expires; P1 is dispatched.
+At time 42: P1 requests the disk; P17 is dispatched.
+At time 44: P17 requests the disk; P12 is dispatched.
+At time 46: P12 requests the disk.
+At time 48: An interrupt occured for P1.
+At time 50: P1 is dispatched.
+At time 52: P1 requests the disk.
+At time 54: An interrupt occurred for P1.
+At time 56: P1 is dispatched.
+At time 58: An interrupt occurred for P3.
+At time 60: An interrupt occurred for P2; An interrupt occurred for P7.
+At time 62: An interrupt occurred for P19.
+At time 64: P1 requests the keyboard; An interrupt occurred for P4; P2 is dispatched.
+At time 66: P2 requests the disk; An interrupt occurred for P11; An interrupt occurred for P17.
+At time 68: An interrupt occurred for P15; An interrupt occurred for P16.
+At time 70: P3 is dispatched; An interrupt occurred for P14.
+At time 72: P3 requests the disk. An interrupt occurs for P18.
+At time 74: An interrupt occurred for P12; An interrupt occurred for P9; An interrupt occurred for P2.
+At time 76: An interrupt occurred for P10; P2 is dispatched.
+At time 78: P11 is terminated; P2 is terminated.
+At time 80: P13 is terminated; P15 is dispatched. 
+At time 82: Time slice for P15 expires; P7 is dispatched.
+At time 84: P15 is terminated.
+At time 86: An interrupt occurred for P14; Time slice for P7 expires.
+At time 88: An interrupt occurred for P6; P4 is terminated.
+At time 90: P6 is dispatched.
+At time 100: P10 is terminated; Time slice for P6 expires.
+At time 110: P14 is terminated; P7 is dispatched. 
